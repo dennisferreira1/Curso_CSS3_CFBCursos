@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/* Cores */
+p{
+    color: #ff0000; /* forma hexadecimal */
+    /* obs.: se os valores de cada canal (RGB) forem iguais, podemos usar apenas um valor para cada. Por exemplo: #ff0000 pode ser substituído por #f00 */
+    font-size: 20pt;
+    font-weight: bold;
+}
+h1{
+    color: rgb(255, 0, 0); /* forma decimal */
+}
+
+#dv1{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(250, 0, 0, 0.4); /* a: adicionando transparência na cor*/
+    text-align: center;
+}
+
