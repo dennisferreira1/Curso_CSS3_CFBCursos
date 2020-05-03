@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+body{
+    background-color: #bbb;
+    background-image: url(logo.jpg), url(css3.png);
+    background-size: 500px, 200px;
+    background-repeat: no-repeat;
+    background-position: 0px 150px, 550px 150px;
+    background-attachment: fixed, scroll;
+}
+
+p{
+    font-size: 40pt;
+    color: #f00;
+    background-color: #0f0;
+    background-image: url(css3.png);
+    background-size: 40px;
+    background-repeat: repeat-x;
+    background-position: 0 10px;
+}
+
+#d1, #d2, #d3, #img{
+    border: 10px double #000;
+    padding: 35px;
+    background-color: #0f0;
+}
+#d1{
+    background-clip: border-box;
+}
+#d2{
+    background-clip: padding-box;
+}
+#d3{
+    background-clip: content-box;
+}
+#img{
+    height: 500px;
+    background: #0f0 url(logo.jpg) no-repeat 0px 0px / 100% 100%; 
+    /* 0px 0px(position da imagen) 100% 100% (size da imagem) */
+}
