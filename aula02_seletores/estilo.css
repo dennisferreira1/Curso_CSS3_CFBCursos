@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/* Seletor para tag */
+p{
+    color: #f00;
+    font-size: 20pt;
+}
+
+/* Seletor para classe, tem prioridade sobre o seletor para tag */
+.titulo{
+    color: aquamarine;
+    font-size: 40pt;
+    font-weight: lighter;
+}
+
+/* Seletor para id, tem prioridade sobre o seletor para classe e para tag */
+#p1{
+    color: #999;
+}
+
+/* Usando vários seletores*/
+h1, h2, h3{
+    color: blueviolet;
+}
