@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+p{
+    /* Tipo da fonte*/
+    font-family: 'Dancing Script', cursive;
+    /* Itálico*/
+    font-style: italic;
+    /* Negrito*/
+    font-weight: bold;
+    font-size: 20pt;
+
+}
