@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+div{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: inline-table;
+    color: #000;
+    font-size: 60px;
+}
+
+#gr1{
+    background: linear-gradient(to bottom, #f00, #ff0 );
+}
+#gr2{
+    background: linear-gradient(45deg, #f00, #00f, #ff0 );
+}
+#gr3{
+    background: linear-gradient(to bottom, #f00 0%, #ff0 25%, #00f 100% );
+}
+#gr4{
+    background: linear-gradient(to right, #f00, #ff0 );
+}
+#gr5{
+    background: radial-gradient(#f00, #ff0 );
+}
+#gr6{
+    background: radial-gradient(#f00, #ff0, #00f );
+}
+#gr7{
+    background: radial-gradient(#f00 0%, #ff0 25%, #00f 50% );
+}
+#gr8{
+    background: radial-gradient(circle, #ff0, #00f );
+}
+#gr9{
+    background: repeating-linear-gradient(to right, #f00, #ff0 20%, #00f 40%);
+}
+#gr10{
+    background: repeating-radial-gradient(#f00, #ff0 20%, #00f 30%);
+}
+
+h1{
+    background: linear-gradient(to right, #f00 , #ff0 30%);
+    font-size: 60pt;
+    color: transparent;
+    -webkit-background-clip: text;
+}
