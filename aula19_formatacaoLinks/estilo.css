@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    background-color: #006;
+    padding: 20px;
+    display: inline;
+}
+a:hover{
+    background-color: #88f;
+}
