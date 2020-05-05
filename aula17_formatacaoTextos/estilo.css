@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+p{
+    color:#000;
+    /* Inserir sublinhado, riscado ou linha em cima das palavras*/
+    text-decoration: none; /* none: sem linha*/
+    /* Alinhamento horizontal do texto*/
+    text-align: justify; 
+    /* Transformar em maiúscula, minúscula ou primeira letra maiúscula*/
+    text-transform: capitalize;
+    /* Recuo da primeira do parágrafo*/
+    text-indent: 50px;
+    /* Espaçamento entre letras*/
+    letter-spacing: 2px;
+     /* Altura das linhas*/
+    line-height: 1.5;
+    /* Espaçamento entre palavras*/
+    word-spacing: 1px;
+
+
+}
+div{
+    margin: auto;
+    width: 350px;
+    height: 200px;
+    border: 1px solid #000 ;
+    white-space: normal;
+    overflow: auto;
+}
+#p1{
+    
+    
+}
+#p2{
+    
+    
+}
+#p3{
+    
+}
+#p4{
+    
+}
+#p5{
+    
+}
+#p6{
+    
+}
