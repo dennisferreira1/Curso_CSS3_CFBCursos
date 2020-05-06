@@ -6,15 +6,21 @@
     width: 100%;
 }
 
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
 a{
     text-decoration: none;
     background-color: #006;
     color: #fff;
     padding: 0px;
     margin: 0px;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 40px;
     font-size: 18px;
