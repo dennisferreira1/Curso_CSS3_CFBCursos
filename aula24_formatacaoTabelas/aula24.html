@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula24 CSS - Formatação de Tabelas</title>
+    <style>
+        table, td, th{
+            border: 1px solid #000;
+        }
+        table{
+            width: 500px;
+            table-layout: fixed; /* Largura das colunas da tabela */
+            border-collapse: collapse; /* Espaço entre células*/
+            /*empty-cells: show; Comportamento de células vazias*/
+
+        }
+        td, th{
+            height: 40px;
+            text-align: center;
+            vertical-align: middle;
+
+        }
+        /* Formmatando o cabeçalho da tabela */
+        th{
+            background-color: #8a8;
+            color: #fff;
+            font-size: 20px;
+        }
+        /* Formatando linhas ímpares com a cor cinza */
+        tr:nth-child(odd){
+            background-color: #ddd;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Peça</th><th>Valor</th><th>Estoque</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Processador</td><td>R$800,00</td><td>30</td>
+            </tr>
+            <tr>
+                <td>Memória Ram</td><td>R$150,00</td><td>55</td>
+            </tr>
+            <tr>
+                <td>HD</td><td>R$320,00</td><td>20</td>
+            </tr>
+            <tr>
+                <td>Cx Som</td><td>R$20,00</td><td>100</td>
+            </tr>
+            <tr>
+                <td>Teclado</td><td>R$20,00</td><td>20</td>
+            </tr>
+            <tr>
+                <td>Mouse</td><td>R$10,00</td><td>10</td>
+            </tr>
+            <tr>
+                <td>Processador</td><td>R$800,00</td><td>30</td>
+            </tr>
+            <tr>
+                <td>Memória Ram</td><td>R$150,00</td><td>55</td>
+            </tr>
+            <tr>
+                <td>HD</td><td>R$320,00</td><td>20</td>
+            </tr>
+            <tr>
+                <td>Cx Som</td><td>R$20,00</td><td>100</td>
+            </tr>
+            <tr>
+                <td>Teclado</td><td>R$20,00</td><td>20</td>
+            </tr>
+            <tr>
+                <td>Mouse</td><td>R$10,00</td><td>10</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
