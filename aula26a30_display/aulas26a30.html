@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aulas26a30 CSS - Display </title>
+    <style>
+
+        /* Usando display: none, block, inline-block e inline */
+        div,span{
+            border: 1px solid #000;
+            margin: 0px;
+            width: 100px;
+            height: 100px;
+        }
+        #dv1{
+            display: block;
+
+        }
+        #sp1{
+            display: inline;
+        }
+        #dv2{
+            display: inline-block;
+        }
+        #sp2{
+            display: inline-block;
+        }
+        #dv3{
+            display: none;
+        }
+        /* FIM */
+
+
+        /* Usando display: table, table-row e table-cell para construir uma tabela a partir de listas */
+        ol, ul, li{
+            border: 1px solid #000;
+            margin: 0px;
+            padding: 0px;
+        }
+        ol{
+            display: table;
+            width: 500px;
+        }
+        ul{
+            display: table-row; 
+            height: 40px;
+        }
+        li{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .titulo{
+            background-color: turquoise;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        /* FIM */
+
+
+        /* Usando display: flex */
+        section{
+            height: 400px;
+            margin: 10px;
+            border: 3px solid #f00;
+            display: flex;/* Deixando o contenier flexível*/
+            min-width: 700px;
+
+            /* Quebra de linha */
+            flex-wrap: nowrap;
+
+            /*Alinhamento horizontal do conteúdo*/
+            justify-content: center;
+
+            /*Alinhamento vertical do conteúdo*/
+            align-items: center;
+        }
+        .div{
+            border: 1px solid #000;
+            width: 100px;
+        }
+        /* FIM */
+
+    </style>
+</head>
+<body>
+
+    <div id="dv1">div1</div>
+    <span id="sp1">span1</span>
+    <div id="dv2">div2</div>
+    <span id="sp2">span2</span>
+    <div id="dv3">div3</div> 
+    
+    
+    <ol>
+        <ul class="titulo">
+            <li>Cor</li>
+            <li>Forma</li>
+            <li>Objeto</li>
+        </ul>
+        <ul>
+            <li>Verde</li>
+            <li>Quadrado</li>
+            <li>Caneta</li>
+        </ul>
+        <ul>
+            <li>Vermelho</li>
+            <li>Círculo</li>
+            <li>Microfone</li>
+        </ul>
+        <ul>
+            <li>Verde</li>
+            <li>Quadrado</li>
+            <li>Caneta</li>
+        </ul>
+        <ul>
+            <li>Vermelho</li>
+            <li>Círculo</li>
+            <li>Microfone</li>
+        </ul>
+    </ol>
+
+    <section>
+        <div class="div" id="d4">CFB 1</div>
+        <div class="div" id="d5">CFB 2</div>
+        <div class="div" id="d6">CFB 3</div>
+        <div class="div" id="d7">CFB 4</div>
+        <div class="div" id="d8">CFB 5</div>
+        <div class="div" id="d9">CFB 6</div>
+    </section>
+
+
+</body>
+</html>
