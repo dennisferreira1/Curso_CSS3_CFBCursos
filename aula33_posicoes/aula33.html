@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula33 CSS - Posições</title>
+    <style>
+
+        /* Posicionamento dos elementos na página 
+           position: static, absolute, relative e fixed
+
+           static: Posição padrão. Os elementos são posicionados conforme a ordem que forem inseridos no html, levando em consideração só os outros elementos static. Obs.:Não usa top e left para posicionar.
+
+           absolute: Posiciona em relação ao seu elemento pai. Se não forem definidos
+           top e left, o elemento será posicionado logo abaixo do último elemento static inserido anterior a ele no html.
+
+           relative: Posiciona em relação ao último elemento static ou relative inserido anterior a ele no html.
+
+           fixed: Posiciona em relação à janela deixando o elemento fixo.
+         */
+
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: teal;
+            
+        }
+        div{
+            border: 1px solid #000;
+            background-color: #ddd;
+        }
+        #d0{
+            width: 700px;
+            height: 700px;
+            background-color: #eef;
+            position: absolute;
+            left:300px;
+            top: 150px;
+        }
+        #d1, #d2{
+            width: 300px;
+            height: 150px;
+        }
+        #d1{
+            position: static;
+           
+
+        }
+        #d2{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        #d3{
+            position: static;     
+        
+        }
+        #d4{
+            position: static;
+        }
+        #d5{
+            position: absolute;
+            
+        }
+        #d6{
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="d0">
+        <div id="d4">DIV4 - CFB Cursos - Curso de CSS</div>
+        <div id="d1">DIV1 - CFB Cursos - Curso de CSS</div>
+        <div id="d2">DIV2 - Baixe as apostilas pelo site www.cfbcursos.com.br</div>
+        <div id="d3">DIV3 - CFB Cursos - Curso de CSS</div>
+        <div id="d5">DIV5 - CFB Cursos - Curso de CSS</div>
+        <div id="d6">DIV6 - CFB Cursos - Curso de CSS</div>
+        
+        
+    </div>
+
+    
+</body>
+</html>
