@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula38e39 CSS - Transições</title>
+    <style>
+
+        p{
+            width: 300px;
+            height: 250px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: justify;
+
+            /* 
+                Adicionando transição quando um evento de algum elemento for disparado.
+                Indicar qual a propriedade seguida do tempo. Quanto maior o valor do tempo mais lenta será a transição .
+            */
+
+            transition: width 2s, height 2s, background-color 2s, color 2s;
+            /* 
+                Configurar velocidade da transição
+                liner= velocidade constante
+                ease-in= lento no início rápido no final
+                ease-out= rápido no início lento no final
+                ease-in-out= lento no início rapido no meio e lento no final
+                cubic-bezier= configurar com os valores desejados
+            */
+            transition-timing-function: cubic-bezier(1, .5, 1, .5);
+
+            /* Tempo de espera para iniciar a transição */
+            transition-delay: 2s;
+        }
+        #p1:hover{
+            width: 800px;
+            height: 120px;
+            background-color: #f00;
+            color: #fff;
+        }
+        #d1{
+            width: 300px;
+            height: 250px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: justify;
+            transition: background-color 2s, color 2s, transform 4s;
+            transition-timing-function: linear;
+            transition-delay: 2s;
+        }
+        #d1:hover{
+            background-color: #f00;
+            color: #fff;
+            transform: rotate(360deg);
+        }
+        
+    </style>
+</head>
+<body>
+
+    <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam minima voluptatem expedita? Magnam itaque aliquam eveniet, amet, id quibusdam cum, alias aliquid reprehenderit optio provident ea illum distinctio voluptatibus neque.
+    </p>
+    <br>
+    <div id="d1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam minima voluptatem expedita? Magnam itaque aliquam eveniet, amet, id quibusdam cum, alias aliquid reprehenderit optio provident ea illum distinctio voluptatibus neque.
+    </div> 
+    
+</body>
+</html>
