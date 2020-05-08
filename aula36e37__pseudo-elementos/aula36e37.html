@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula36e37 CSS - Pseudo-Elementos</title>
+    <style>
+        p{
+            font-size: 30px;
+        }
+        p::before{
+            content: "CFB - ";
+            color: tomato;
+        }
+        p::after{
+            content: url(logo.png);
+        }
+        p::first-letter{
+            color: yellow;
+            font-size: 70px;
+        }
+        p::first-line{
+            background-color: teal;
+        }
+        ::selection{
+            background-color: #0f0;
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+
+
+    <p>CFB Cursos</p>
+    <p>CFB Cursos</p>
+    <p>CFB Cursos</p>
+    <p id="p1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur possimus minima dolore similique nostrum! Non nobis, sapiente laudantium architecto obcaecati dolores. Inventore quo nobis quae, dolore perferendis eligendi quas accusantium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quod id quos provident amet iure dolorum, totam eos omnis tempore, vero unde minima nisi eaque doloribus expedita deleniti quisquam assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur animi aliquam quisquam dolores at quam vitae maxime laborum facilis voluptatem labore iste mollitia, corrupti nulla recusandae nisi vero expedita nobis.
+    </p>
+  
+    
+</body>
+</html>
