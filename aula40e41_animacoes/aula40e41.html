@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula38e39 CSS - Transições</title>
+    <style>
+
+        /* Criando animações */
+        @keyframes anima1{
+            from{left: 0px}
+            to{left: 500px}
+        }
+        @keyframes anima2{
+            from{background-color: tomato;}
+            to{background-color: teal;}
+        }
+
+        @keyframes anima3{
+            0%{top: 200px; left: 0px;}
+            25%{top: 200px; left: 400px;}
+            50%{top: 400px; left: 400px;}
+            75%{top: 400px; left: 0px;}
+            100%{top: 200px; left: 0px;}
+        }
+        /* FIM */
+
+        #p1{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: justify;
+            overflow: hidden;
+            position: relative;
+            left: 500px;
+            top: 50px;
+
+            /* 
+                Utilizando as animações
+                - Informar o nome da animação criada;
+                - Pode usar mais de uma animação. Basta separar por vírgula;
+            */
+            animation-name: anima1, anima2;
+            /*
+                Tempo de duração de cada animação separados por vírgula.
+            */
+            animation-duration: 2s, 4s;
+            
+            /* 
+                Configurar velocidade da animação
+                liner= velocidade constante
+                ease-in= lento no início rápido no final
+                ease-out= rápido no início lento no final
+                ease-in-out= lento no início rapido no meio e lento no final
+                cubic-bezier= configurar com os valores desejados
+            */
+            animation-timing-function: cubic-bezier(1, .5, 1, .5);
+
+            /* Tempo de espera para iniciar cada animação separados por vírgula */
+            animation-delay: 0s, 3s;
+            
+        }
+
+        #p2{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: justify;
+            overflow: hidden;
+            position: absolute;
+            left: 0px;
+            top: 200px;
+            animation-name: anima3;
+            animation-duration: 2s;
+
+            /* Quantas vezes a animação vai rodar. Padrão é 1*/
+            animation-iteration-count: infinite;
+            /* Estado da animação. Rodando ou pausado */
+            animation-play-state: running;
+            /*  Direção da animação. Normal, Inversa, Alternada*/
+            animation-direction: alternate;
+
+        } 
+        
+    </style>
+</head>
+<body>
+
+    <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam minima voluptatem expedita? Magnam itaque aliquam eveniet, amet, id quibusdam cum, alias aliquid reprehenderit optio provident ea illum distinctio voluptatibus neque.
+    </p>
+
+    <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam minima voluptatem expedita? Magnam itaque aliquam eveniet, amet, id quibusdam cum, alias aliquid reprehenderit optio provident ea illum distinctio voluptatibus neque.
+    </p>
+    
+</body>
+</html>
