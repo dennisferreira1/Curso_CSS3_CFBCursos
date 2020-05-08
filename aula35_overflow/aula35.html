@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula35 CSS - overflow</title>
+    <style>
+        #d1{
+            border: solid 1px #000;
+            width: 300px;
+            height: 300px;
+            
+            /* 
+                overflow: 
+                Propriedade para definir como o contenier vai mostrar o conteúdo que excede os seus limites de largura e altura.
+
+                hidden= esconde; auto= adiciona barras de rolagem automáticamente se precisar; scroll= adiciona barras de rolagem independentemente de precisar ou não.
+            */
+            overflow: auto;
+        }
+        #img1{
+            border: 1px solid #f00;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="d1">
+        <img id="img1" src="../aula34_float_clear/logo.png">
+    
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam minima voluptatem expedita? Magnam itaque aliquam eveniet, amet, id quibusdam cum, alias aliquid reprehenderit optio provident ea illum distinctio voluptatibus neque.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam minima voluptatem expedita? Magnam itaque aliquam eveniet, amet, id quibusdam cum, alias aliquid reprehenderit optio provident ea illum distinctio voluptatibus neque.
+        </p>
+    </div>
+    
+</body>
+</html>
