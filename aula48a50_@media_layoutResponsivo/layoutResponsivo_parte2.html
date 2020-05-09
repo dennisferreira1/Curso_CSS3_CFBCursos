@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang=“pt-br”>
+	<head>
+		<title>Aula49 - Layout Responsivo</title>
+		<meta charset=“UTF-8”>
+		
+		<style rel="stylesheet">
+
+            nav{
+                width: 200px;
+                float: left;
+            }
+            nav a{
+                text-decoration: none;
+                background-color: #d55;
+                color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                margin: 4px;
+                padding: 2px;
+                display: block;
+            }
+            article{
+                margin-left: 210px;
+            }
+
+            article p{
+                text-align: justify;
+                text-indent: 50px;
+            }
+			
+            @media screen and (min-width: 0px) and (max-width: 400px) {
+                nav{
+                    width: 100%;
+                }
+                nav a{
+                    height: 40px;
+                    font-size: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                article{
+                    margin: 4px;
+                }
+                
+            }
+            @media screen and (min-width: 401px) and (max-width: 800px) {
+                nav a{
+                    height: 40px;
+                    font-size: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                article div{
+                    float: left;
+                    margin-left: 50px; 
+                }
+            }
+
+		</style>
+
+	</head>
+	<body>
+
+		<section>
+
+            <nav>
+                <a href="#">Menu 1</a>
+                <a href="#">Menu 2</a>
+                <a href="#">Menu 3</a>
+            </nav>
+
+            <article>
+                <h1>CFB Cursos</h1>
+                <p>Aqui você encontra aulas em vídeo com qualidade, estão disponíveis várias playlists com conteúdos variados. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, laboriosam repellendus veniam ipsa beatae maxime tempora soluta tempore. Autem odio doloribus officiis vitae dolor mollitia aliquam reprehenderit ipsum reiciendis saepe. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis consectetur quaerat, sint inventore perferendis at natus excepturi explicabo fugit laborum debitis ut laudantium quia maiores nulla. Consequatur distinctio iure dolorum.</p>
+                <div>
+                    <h1>Playlits publicadas</h1>
+                    <ul>
+                        <li>C++</li>
+                        <li>HTML 5</li>
+                        <li>PHP</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Em breve...</h1>
+                    <ul>
+                        <li>Arduino</li>
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>Mais C++</li>
+                    </ul>
+                </div>
+            </article>
+
+        </section>
+	</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang=“pt-br”>
+	<head>
+		<title>Aula CSS - Layout Responsivo</title>
+		<meta charset=“UTF-8”>
+		
+		<style rel="stylesheet">
+
+			body {
+				font-family: Arial;
+			}
+
+			h1{
+				font-size:1.5em;
+			}
+
+			h2{
+				font-size:1em;
+				text-align: justify;
+			}
+			
+			p{
+				font-size:1em;
+				text-align: justify;
+				text-indent: 10%;
+			}
+			header, aside, section, footer, nav{
+				padding:1%;
+			}
+			header{
+				background-color:#eee;
+				width:98%;
+			}
+			nav{
+				width: 13%;
+				float: left;
+			}
+			nav a{
+				margin:1%;
+				margin-left:0;
+				margin-top:0;
+				border-bottom:#ddd solid 1px;
+				cursor:pointer;
+				text-decoration: none;
+				display:block;
+			}
+			section{
+				width:53%;
+				float:left;
+			}
+			aside{
+				background-color:#FDD;
+				float:right;
+				width:28%;
+			}
+			footer{
+				width:98%;
+				text-align:center;
+				background-color:#ddd;
+				clear:both;
+				border-top: #fff solid 2px;
+			}
+			footer p{
+				text-align: center;
+				text-indent: 0%;
+			}
+
+			@media screen and (min-width: 451px) and (max-width: 800px) {
+				section{
+					width: 85%;
+					padding:1%;
+					margin:0%;	
+				}
+				aside{
+					clear: both;
+					width: 98%;
+					padding:1%;
+					margin:0%;
+				}
+			}
+			@media screen and (max-width:450px){
+				nav, section, aside, footer, nav a{
+					width:98%;
+					clear:both;
+					padding:1%;
+					margin:0%;
+				}
+			}
+			
+		</style>
+
+	</head>
+	<body>
+		<header>
+			<h1>Layout responsivo - CFB - Curso de CSS<h1>
+		</header>
+		<nav>
+			<a href="#">Menu 1</a>
+			<a href="#">Menu 2</a>
+			<a href="#">Menu 3</a>
+			<a href="#">Menu 4</a>
+		</nav>
+		<section>
+			<h1>Canal Fessor Bruno</h1>
+			<p>No canal do youtube www.youtube.com/canalfessorbruno ou o site www.cfbcursos.com.br você encontra os melhores cursos de informática.</p>
+			<img src="logo.png" alt="Logo CFB" width="70px" height="50px">
+		</section>
+		<aside>
+			<h1>Curso</h1>
+			<p>Curso de CSS3, conteúdo exclusivo do canalfessorbruno no youtube e do site www.cfbcursos.com.br</p>
+			<h1>Custo</h1>
+			<p>Conteúdo 100% gratuito</p>
+		</aside>
+
+		<footer>
+			<p>Layout responsivo do curso de CSS - www.cfbcursos.com.br - youtube:canalfessorbruno</p>
+		</footer>
+	</body>
+</html>

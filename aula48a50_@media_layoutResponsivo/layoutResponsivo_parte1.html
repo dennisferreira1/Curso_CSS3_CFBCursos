@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula48 CSS - Layout Responsivo</title>
+    <style>
+
+        /*
+            @media - Comando para ajustar as formatações de acordo com o dispositivo usado.
+            all= Todos os tipos de dispositivos
+            print= Usado para impressoras
+            screen= Uado para telas, computador, celulares, tablets, etc.
+            speech= Usado para telas de leitores de contúdo, leitores de ebook por exemplo, em voz alta.
+        */
+        @media screen and (min-width: 0px) and (max-width: 700px) {
+            body{
+                background-color: #f00;
+            } 
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        @media screen and (min-width: 701px) and (max-width: 1000px) {
+            body{
+                background-color: #0f0;
+            }
+
+        img{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo.png">
+    
+</body>
+</html>
